@@ -1,5 +1,10 @@
 # Changelog
 
+## \[0.10.3]
+
+- Implement theme APIs for Linux.
+  - [f21cbecd](https://www.github.com/tauri-apps/tauri/commit/f21cbecdeb3571ac4ad971b9a865ff62a131a176) feat(core): implement theme APIs for Linux ([#4808](https://www.github.com/tauri-apps/tauri/pull/4808)) on 2022-08-02
+
 ## \[0.10.2]
 
 - Disable drag-n-drop of tao based on `fileDropEnabled` value.

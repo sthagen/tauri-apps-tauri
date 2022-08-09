@@ -1,5 +1,14 @@
 # Changelog
 
+## \[1.1.0]
+
+- Improve shell's `Command`, `Command.stdout` and `Command.stderr` events with new `once`, `off`, `listenerCount`, `prependListener`, `prependOnceListener` and `removeAllListeners` functions.
+  - [aa9f1243](https://www.github.com/tauri-apps/tauri/commit/aa9f1243e6c1629972a82e469f20c8399741740e) Improved EventEmitter for tauri api shell ([#4697](https://www.github.com/tauri-apps/tauri/pull/4697)) on 2022-07-26
+- Fix error when `invoke()` arguments contained a `cmd` field.
+  - [5109c275](https://www.github.com/tauri-apps/tauri/commit/5109c27501e0a48e1207115d1258afc3b5356ec7) fix(core): avoid conflict with user-defined `cmd` arg in invoke, closes [#4875](https://www.github.com/tauri-apps/tauri/pull/4875) ([#4892](https://www.github.com/tauri-apps/tauri/pull/4892)) on 2022-08-08
+- Added the `encoding` option to the `Command` options.
+  - [d8cf9f9f](https://www.github.com/tauri-apps/tauri/commit/d8cf9f9fcd617ac24fa418952fd4a32c08804f5c) Command support for specified character encoding, closes [#4644](https://www.github.com/tauri-apps/tauri/pull/4644) ([#4772](https://www.github.com/tauri-apps/tauri/pull/4772)) on 2022-07-28
+
 ## \[1.0.2]
 
 - Added helper functions to listen to updater and window events.
